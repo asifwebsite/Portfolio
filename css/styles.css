@@ -105,6 +105,18 @@ img {
   font-size: 4rem;
 }
 
+.intro-list {
+  list-style-type: none;
+  padding: 0;
+}
+.intro-list li {
+  margin-bottom: 15px; /* Adjust the space as needed */
+}
+.contact-link {
+  text-decoration: none;
+  color: #007BFF;
+}
+
 
 /* contact section */
 
@@ -193,6 +205,8 @@ nav [class*="fa-"]:hover {
 #projects h2 {
   font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
+  text-align: center;
+
 }
 
 #projects h3 {
@@ -225,6 +239,10 @@ nav [class*="fa-"]:hover {
   font-size: 1rem;
 }
 
+#projects .text .blackbox{
+  text-align: left;
+}
+
 #projects img {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
@@ -232,6 +250,65 @@ nav [class*="fa-"]:hover {
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
 }
+
+/* excellence section */
+.section-deans-list {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.blackbox.deans-list-description {
+  font-size: 1.5rem; /* Increase font size */
+  line-height: 1.8; /* Adjust line height for better readability */
+  color: var(--white); /* Assuming the blackbox has a dark background */
+  padding: 2rem; /* Add more padding if needed */
+  margin-bottom: 2rem; /* Space below the paragraph */
+  /* Other styles as needed */
+}
+
+#deans-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#deans-list .blackbox {
+  margin-bottom: 2rem;
+}
+
+
+.deans-list-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deans-list-images figure {
+  margin: 0 1rem;
+  text-align: center;
+  width: 30%; /* Adjust the width as a percentage */
+}
+
+.deans-list-images .image {
+  width: 100%; /* Make image width responsive to the figure element */
+  height: 0;
+  padding-top: 125%; /* This sets the height based on the width (for 4:5 aspect ratio) */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .deans-list-images {
+    flex-direction: column;
+  }
+
+  .deans-list-images figure {
+    width: 60%; /* Larger width for smaller screens */
+    margin: 0 auto 2rem auto; /* Centering and adding margin */
+  }
+}
+
+
 
 
 /* footer section */

@@ -4,8 +4,8 @@
   --black: #171321;
   --dkblue: #0d314b;
   --plum: #4b0d49;
-  --hotmag: #ff17e4;
-  --magenta: #e310cb;
+  --hotmag: #86fbfb;
+  --magenta: #0bd0d0;
   --aqua: #86fbfb;
   --white: #f7f8fa;
   --font-size: 1.3rem;
@@ -45,11 +45,11 @@ h3 {
 }
 
 a {
-  color: var(--magenta);
+  color: var(--hotmag);
 }
 
 a:hover {
-  color: var(--hotmag);
+  color: var(--aqua);
   text-decoration: none;
 }
 
@@ -182,8 +182,8 @@ nav [class*="fa-"]:hover {
 }
 
 .button {
-  background-color: var(--magenta);
-  color: white;
+  background-color: var(--aqua);
+  color: black;
   padding: 0.5rem;
   border-radius: 5px;
   text-decoration: none;
@@ -191,8 +191,8 @@ nav [class*="fa-"]:hover {
 }
 
 .button:hover {
-  color: white;
-  background-color: var(--hotmag);
+  color: black;
+  background-color: var(--magenta);
 }
 
 
